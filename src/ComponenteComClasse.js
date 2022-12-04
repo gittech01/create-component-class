@@ -33,26 +33,34 @@ class ComponenteComClasse extends React.Component {
   render() {
     return (
       <div>
-        <h1>Treinando como chamar funcção com e sem parametros </h1>
+        
+        <div>
 
-        {/* 2 FORMAS DE CHAMAR FUNÇÕES SEM PARAMETROS */}
-        {/* Tipo 1: */}
-        <button onClick={() => this.botaoSemParam1()}>Botão Sem parameto 1</button>
+          <h1>Treinando como chamar funcção com e sem parametros </h1>
 
-        {/* Tipo 2: */}
-        <button onClick={this.botaoSemParam2}>Botão Sem parameto 2</button>
-        <br></br>
+          {/* 2 FORMAS DE CHAMAR FUNÇÕES SEM PARAMETROS */}
+          <h3>Botões que acionam funções sem parâmetros</h3>
 
-        <hr />
+          {/* Tipo 1: */}
+          <button onClick={() => this.botaoSemParam1()}>Botão Sem parameto 1</button>
 
-        {/*  2 FORMAS DE CHAMAR FUNÇÃO COM PARAMETROS */}
-        {/* Tipo 1: usando arrow function*/}
-        <button onClick={() => this.botaoComParam1("Acionado!!!")}>Botão Com parameto 1</button>
+          {/* Tipo 2: */}
+          <button onClick={this.botaoSemParam2}>Botão Sem parameto 2</button>
 
-        {/* Tipo 2: usando o bind*/}
-        <button onClick={this.botaoComParam2.bind(this, "Acionado!!!")}>Botão Com parameto 2</button>
-        <hr />
-        <br />
+        </div>
+
+        <div>
+
+          {/*  2 FORMAS DE CHAMAR FUNÇÃO COM PARAMETROS */}
+          <h3>Botões que acionam funções com parâmetros</h3>
+
+          {/* Tipo 1: usando arrow function*/}
+          <button onClick={() => this.botaoComParam1("Acionado!!!")}>Botão Com parameto 1</button>
+
+          {/* Tipo 2: usando o bind*/}
+          <button onClick={this.botaoComParam2.bind(this, "Acionado!!!")}>Botão Com parameto 2</button>
+
+        </div>
 
       </div>
     )
