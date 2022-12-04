@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import App from './ComponenteComClasse';
+import ComponenteComClasse from './ComponenteComClasse';
 
 
 // Tipo: 1
@@ -10,7 +10,7 @@ import App from './ComponenteComClasse';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ComponenteComClasse />
   </React.StrictMode>
 );
 
@@ -19,5 +19,5 @@ root.render(
 // podemos não usar o metodo <React.StrictMode>
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
-//     <App />
+//     <ComponenteComClasse /> or ComponenteComClasse
 // );
